@@ -10,7 +10,7 @@ import "./Calendar.css";
 
 const Calendar = () => {
   const [value, setValue] = useState(new Date());
-  const [highlightedDays, setHighlightedDays] = useState([1, 2, 13]);
+  const [highlightedDays] = useState([1, 2, 13]);
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <StaticDatePicker
